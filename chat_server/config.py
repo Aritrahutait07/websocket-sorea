@@ -1,0 +1,12 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+DATABASE_URL = os.getenv("DATABASE_URL")
+SERVER_HOST = os.getenv("SERVER_HOST")
+SERVER_PORT = int(os.getenv("SERVER_PORT", 8000))
+FIREBASE_PROJECT_ID = os.getenv("FIREBASE_PROJECT_ID")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+AZURE_CONTENT_SAFETY_KEY = os.getenv("AZURE_CONTENT_SAFETY_KEY")    
+AZURE_CONTENT_SAFETY_ENDPOINT = os.getenv("AZURE_CONTENT_SAFETY_ENDPOINT")
